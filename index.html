@@ -5,101 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <div class="logo">MyPortfolio</div>
+        <div class="logo">Portfolio</div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <button id="theme-toggle">🌞</button>
+
+        <!-- Theme Toggle Switch -->
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
     </header>
 
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm a passionate developer showcasing my skills and projects.</p>
-        <img src="profile.jpg" alt="Profile Image" class="profile-img">
-        <div class="social-icons">
-            <a href="#"><img src="icon1.png" alt="Icon 1"></a>
-            <a href="#"><img src="icon2.png" alt="Icon 2"></a>
-            <a href="#"><img src="icon3.png" alt="Icon 3"></a>
-            <a href="#"><img src="icon4.png" alt="Icon 4"></a>
+    <!-- Home Section -->
+    <section  id="home">
+        <div class="home-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm a passionate Web Developer.</p>
+            <div class="profile-img"></div>
+            <div class="social-icons">
+                <i class="fa-brands fa-x-twitter"></i>
+                <a href="https://x.com/parshotamsinghi?s=21">twitter</a>
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/parshotam-singh-778028288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">linkedin</a>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/parshotamlal">Github</a>
+            </div>
+            <a href="parshotamlal.pdf.png" class="resume-btn" download>Download Resume</a>
         </div>
-        <button class="resume-btn">Download Resume</button>
     </section>
-
-    <section id="about">
+     <!-- About Section -->
+     <section id="about">
         <h2>About Me</h2>
-        <p>I'm a software engineer and travel blogger passionate about technology and adventure.</p>
-        <img src="about.jpg" alt="About Image" class="about-img">
+        <img class= "image"src="profile.jpg" alt="image">
+        <p>"Hello! I'm Himanshi Ukey, I am a passionate Software Developer with a strong background in designing,
+            developing, and implementing scalable applications. With expertise in <span class="font-semibold">[key technologies, e.g., JavaScript,
+                 Python, React, Node.js, etc.]</span>, I specialize in creating
+            efficient, user-friendly, and high-performing solutions.</p> 
+           <p>I am always eager to learn new technologies and collaborate with teams to develop software that enhances
+            user experience and meets business needs. Whether it's developing APIs, optimizing performance, or leading
+            development teams, I am committed to delivering quality software solutions.</p> 
+            <p>When I'm not coding, you can find me exploring new places, trying out new recipes, or catching up on my favorite TV shows.</p>   
+       
+
         <button class="read-more">Read More</button>
+
     </section>
 
-    <section id="skills">
+     <!-- Skills Section -->
+     <section id="skills">
         <h2>Skills</h2>
         <div class="skill-bar">
-            <p>Web Development</p>
-            <div class="progress"><div class="progress-fill" style="width: 90%;"></div></div>
-            <p>JavaScript</p>
-            <div class="progress"><div class="progress-fill" style="width: 80%;"></div></div>
-            <p>CSS Animations</p>
-            <div class="progress"><div class="progress-fill" style="width: 85%;"></div></div>
+            <div class="skill" style="width: 80%;">HTML - 80%</div>
+        </div>
+        <hr>
+        <div class="skill-bar">
+            <div class="skill" style="width: 70%;">CSS - 70%</div>
+        </div>
+        <hr>
+        <div class="skill-bar">
+            <div class="skill" style="width: 85%;">java- 85%</div>
+        </div>
+        <hr>
+        <div class="skill-bar">
+            <div class="skill" style="width: 75%;">Python - 75%</div>
+        </div>
+        <hr>
+        <div class="skill-bar">
+            <div class="skill" style="width: 90%;">JavaScript - 90%</div>   
+        </div>
+        <hr>
+        <div class="skill-bar">
+            <div class="skill" style="width: 80%;">DSA- 80%</div>
+        </div>
+        <hr>
+        <div class="skill-bar">
+            <div class="skill" style="width: 70%;">Data Analytics - 70%</div>
+        </div>
+        
+
+    </section>
+
+     <!-- Certifications Section -->
+     <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="cert-card">
+            <a href="image/WhatsApp Image 2025-02-02 at 17.16.59_7891b101.jpg" target="_blank" class="text-blue-500 hover:underline">
+            Power BI Certification
+            <button>View Certificate</button>
+        </a>
+        </div>
+        <div class="cert-card">
+            <a href="image/WhatsApp Image 2025-02-02 at 17.17.12_8e74931f.jpg" target="_blank" class="text-blue-500 hover:underline">
+            Web Development Certification
+            <button>View Certificate</button>
         </div>
     </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    
+    <div class="project-card"><a href="pdf/Wedding Planner Report.pdf" target="_blank">Project1</a></div>
+    <div class="project-card"> <a href="https://github.com/Himanshiukey/Travel_Blog_HTML_CSS" target="_blank"> Project 2</a> </div>
+    <div class="project-card"> <a href="https://github.com/Himanshiukey/Travel_Blog" target="_blank"> Project 3</a> </div>
+</section>
 
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="cert-card">Certification 1 <button onclick="location.href='cert1.pdf'">View</button></div>
-        <div class="cert-card">Certification 2 <button onclick="location.href='cert2.pdf'">View</button></div>
-        <div class="cert-card">Certification 3 <button onclick="location.href='cert3.pdf'">View</button></div>
+ <!--Contact Section -->
+ <section id="contact">
+    <h2>Contact me</h2>
+    <section class="contact">
+        <p><strong>Name</strong></p>
+        <input placeholder="Enter your name" type="text">
+        <p><strong>Email</strong></p>
+        <input placeholder="Abc@email.com" type="text">
+        <p ><strong>Massage</strong></p>
+        <input class="text" type="text">
+        <button><Strong>Submit</Strong></button>
     </section>
+<footer>
+    <p>&copy; 2025 Your Company</p>
+    <div class="footer-buttons">
+        <a href="9103245289">Call Us</a>
+        <a href="parshotamworks@gmail.com">Email Us</a>
+    </div>
+</footer>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">Project 1</div>
-        <div class="project-card">Project 2</div>
-        <div class="project-card">Project 3</div>
-        <div class="project-card">Project 4</div>
-        <div class="project-card">Project 5</div>
-        <div class="project-card">Project 6</div>
-    </section>
-
-    <section id="testimonials">
-        <h2>Testimonials</h2>
-        <p>"An amazing developer with an eye for detail!" - Client A</p>
-        <p>"Great experience working on my project." - Client B</p>
-        <p>"Highly skilled and professional!" - Client C</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>Contact me at:</p>
-        <button class="call-btn">Call</button>
-        <button class="email-btn">Email</button>
-    </footer>
 </body>
-</body>
+<script src="index.js"></script>
 </html>
+
